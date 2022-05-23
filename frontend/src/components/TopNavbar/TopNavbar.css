@@ -1,0 +1,37 @@
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+li {
+  font-size: 1rem;
+  list-style: none;
+  padding-top: 10px;
+}
+
+.topNavbar {
+  background: #59424c;
+  box-shadow: 4px 2px 5px gray;
+  color: #ffd6a7;
+  padding: 0.5rem 2rem;
+}
+
+.topNavbar button {
+  /* background: transparent; */
+  border: 2px solid white;
+  color: #ffd6a7;
+  padding: 0.4rem 0.5rem;
+}
+
+.topNavbar button:hover {
+  background: #6aa9bc;
+  /* color: steelblue; */
+  cursor: pointer;
+}
+
+.brand {
+  color: #ffd6a7;
+  cursor: pointer;
+  font-size: 2rem;
+}
