@@ -14,11 +14,11 @@ function AddCourseButton({ height, sx }) {
           <img src='/images/add-course.png' height={height} />
         </button>
         <p>Course</p>
-
-        <Modal isOpen={modalIsOpen}>
-          <AddCourseForm setModalIsOpen={setModalIsOpen} />
-        </Modal>
       </Stack>
+
+      <Modal isOpen={modalIsOpen}>
+        <AddCourseForm setModalIsOpen={setModalIsOpen} />
+      </Modal>
     </div>
   );
 }

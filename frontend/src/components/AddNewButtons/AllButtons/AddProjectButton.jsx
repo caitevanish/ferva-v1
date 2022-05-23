@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Stack } from '@mui/material';
 import './AddNewButtons.css';
-import AddCourseForm from '../../Forms/Courses/AddCourseForm';
+import AddProjectForm from '../../Forms/Projects/AddProjectForm';
 import Modal from 'react-modal';
 
 function AddProjectButton({ height, sx }) {
@@ -10,15 +10,15 @@ function AddProjectButton({ height, sx }) {
   return (
     <div>
       <Stack direction='column' spacing={0} sx={sx}>
-        <Modal isOpen={modalIsOpen}>
-          <AddCourseForm setModalIsOpen={setModalIsOpen} />
-        </Modal>
-
         <button type='button' onClick={() => setModalIsOpen(true)}>
           <img src='/images/add-project.png' height={height} />
         </button>
         <p>Project</p>
       </Stack>
+
+      <Modal isOpen={modalIsOpen}>
+        <AddProjectForm setModalIsOpen={setModalIsOpen} />
+      </Modal>
     </div>
   );
 }
